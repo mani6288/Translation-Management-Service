@@ -1,0 +1,26 @@
+gitignore_content = """
+/vendor/
+/node_modules/
+/storage/*.key
+/storage/framework/*
+/storage/logs/*
+/bootstrap/cache/*
+.env
+.phpunit.result.cache
+composer.lock
+/.idea
+/.vscode
+*.swp
+npm-debug.log
+yarn-error.log
+docker-compose.override.yml
+.docker/
+.DS_Store
+Thumbs.db
+/storage/api-docs/*
+"""
+.github/*
+gitignore_path = "/mnt/data/.gitignore"
+with open(gitignore_path, "w") as file:
+    file.write(gitignore_content)
+gitignore_path
